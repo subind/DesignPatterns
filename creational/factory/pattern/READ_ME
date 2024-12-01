@@ -1,0 +1,30 @@
+How This Illustrates the Factory Pattern :-
+-----------------------------------------
+Focus on Subclass Instantiation:
+The NotificationFactory decides which subclass (ChatNotification, ReminderNotification, or PromotionNotification) to instantiate based on the type string.
+
+Decoupled Object Creation:
+The calling code (e.g., NotificationManager) doesn’t need to know the details of how each notification is created. It delegates the responsibility to the factory.
+
+Scalability and Extensibility:
+Adding a new notification type (e.g., UrgentNotification) is as simple as creating a new subclass and updating the factory. The rest of the code remains unaffected.
+
+Avoid Code Duplication/ Reusability:
+The logic for deciding which notification to create is centralized in the factory, reducing code repetition and making it easier to maintain.
+
+Encapsulation of Creation Logic:
+All object creation logic is centralized, reducing duplication and ensuring consistency.
+
+
+
+
+
+Real-World Applicability :-
+-------------------------
+In Android, such a pattern is commonly used in scenarios like:
+
+* UI Factories: Creating custom views or UI components dynamically.
+* Service Factories: Choosing different strategies for background tasks.
+* Database Factories: Selecting different database implementations (e.g., SQLite, Room).
+* Adapter Factories: Dynamically creating RecyclerView adapters for different data types.
+* By leveraging the Factory pattern, you make your code modular, scalable, and easier to maintain.
