@@ -1,9 +1,9 @@
-package behavioural.observer
+package behavioural.observer.pattern
 
 fun main() {
     val subject = Subject()
-    val observer1 = ConcreteObserver1()
-    val observer2 = ConcreteObserver2()
+    val observer1 = ChartObserver()
+    val observer2 = ListObserver()
 
     subject.attach(observer1)
     subject.attach(observer2)
