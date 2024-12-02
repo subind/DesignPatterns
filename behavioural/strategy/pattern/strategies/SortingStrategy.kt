@@ -1,4 +1,4 @@
-package behavioural.strategy.strategies
+package behavioural.strategy.pattern.strategies
 
 interface SortingStrategy {
 

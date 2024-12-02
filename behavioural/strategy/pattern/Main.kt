@@ -1,7 +1,7 @@
-package behavioural.strategy
+package behavioural.strategy.pattern
 
-import behavioural.strategy.strategies.AlphabeticalSort
-import behavioural.strategy.strategies.ReverseAlphabeticalSort
+import behavioural.strategy.pattern.strategies.AlphabeticalSort
+import behavioural.strategy.pattern.strategies.ReverseAlphabeticalSort
 
 fun main() {
 

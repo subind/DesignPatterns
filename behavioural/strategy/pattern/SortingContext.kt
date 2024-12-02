@@ -1,6 +1,6 @@
-package behavioural.strategy
+package behavioural.strategy.pattern
 
-import behavioural.strategy.strategies.SortingStrategy
+import behavioural.strategy.pattern.strategies.SortingStrategy
 
 class SortingContext(strategy: SortingStrategy) {
 
