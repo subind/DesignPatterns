@@ -1,6 +1,6 @@
-package behavioural.state
+package behavioural.state.pattern
 
-import behavioural.state.states.PlayerStates
+import behavioural.state.pattern.states.PlayerStates
 
 class MediaPlayer(initialState: PlayerStates) {
 

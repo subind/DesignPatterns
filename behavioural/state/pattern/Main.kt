@@ -1,6 +1,6 @@
-package behavioural.state
+package behavioural.state.pattern
 
-import behavioural.state.states.StoppedState
+import behavioural.state.pattern.states.StoppedState
 
 fun main() {
 

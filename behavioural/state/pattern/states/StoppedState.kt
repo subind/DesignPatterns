@@ -1,8 +1,8 @@
-package behavioural.state.states
+package behavioural.state.pattern.states
 
-import behavioural.state.MediaPlayer
+import behavioural.state.pattern.MediaPlayer
 
-class PausedState: PlayerStates {
+class StoppedState: PlayerStates {
 
     override fun play(player: MediaPlayer) {
         println("Playing")
@@ -10,12 +10,12 @@ class PausedState: PlayerStates {
     }
 
     override fun pause(player: MediaPlayer) {
-        println("Already paused")
+        println("Pausing")
+        player.currentState = PausedState()
     }
 
     override fun stop(player: MediaPlayer) {
-        println("Stopped")
-        player.currentState = StoppedState()
+        println("Already stopped")
     }
 
     override fun loading(player: MediaPlayer) {

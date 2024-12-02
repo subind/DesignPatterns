@@ -1,6 +1,6 @@
-package behavioural.state.states
+package behavioural.state.pattern.states
 
-import behavioural.state.MediaPlayer
+import behavioural.state.pattern.MediaPlayer
 
 /**
  * Establishes the contract to adhere to for every concrete state
