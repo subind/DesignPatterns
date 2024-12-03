@@ -1,5 +1,5 @@
 Facade general meaning :-
-"the way somebody/something appears to be, which is not the way he/she/it really is"
+"The way somebody/something appears to be, which is not the way he/she/it really is"
 
 ________________________________________________________________________________________________________________________
 

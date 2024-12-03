@@ -1,6 +1,10 @@
 package structural.facade.novice
 
-// MainActivity.kt
+/**
+ * Here the fetch data function is tightly coupled with the client(in our case MainActivity) code
+ * Any changes in requirement in the fetchData() involves altering the client.
+ * If the same logic is required somewhere else in the application, this code needs to be duplicated.
+ */
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

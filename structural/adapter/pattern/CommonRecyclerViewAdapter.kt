@@ -1,6 +1,6 @@
 package structural.adapter.pattern
 
-class DataRecyclerViewAdapter(private val dataList: List<DataModel>) : RecyclerView.Adapter<DataRecyclerViewAdapter.ViewHolder>() {
+class CommonRecyclerViewAdapter(private val dataList: List<DataModel>) : RecyclerView.Adapter<CommonRecyclerViewAdapter.ViewHolder>() {
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val nameTextView: TextView = itemView.findViewById(R.id.nameTextView)

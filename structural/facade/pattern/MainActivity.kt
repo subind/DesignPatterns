@@ -1,9 +1,6 @@
 package structural.facade.pattern
 
-import structural.facade.pattern.abstractions.GsonJsonParser
-import structural.facade.pattern.abstractions.IJsonParser
-import structural.facade.pattern.abstractions.INetworkModule
-import structural.facade.pattern.abstractions.RetrofitNetworkModule
+import structural.facade.pattern.abstractions.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,7 +9,7 @@ class MainActivity : AppCompatActivity() {
 
         val networkModule: INetworkModule = RetrofitNetworkModule()
         val jsonParser: IJsonParser = GsonJsonParser()
-        val cacheManager = CacheManager()
+        val cacheManager = SharedPrefCacheManager()
 
         val dataFacade = DataFacade(networkModule, jsonParser, cacheManager)
         val data = dataFacade.fetchData("/users/123")
